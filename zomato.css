@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 main{
-    background-image: url("/babeque.jpg");
+    background-image: url("./babeque.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
