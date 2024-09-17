@@ -37,51 +37,90 @@ ul{
     font-size: 8.5rem;
     font-style: italic;
 }
-.section-a a::after{
-    content: ">";
+.section-a a{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    background-color: white;
+    color: rgb(88, 85, 85);
+    
+    font-size: 1.2rem;
+    border-radius: 10px;
+
 }
- 
+.dubai{
+    gap: 30px;
+    display: flex;
+    padding: 10px;
+    border-right: 1;
+    
+} 
+#search{
+    padding: 10px;
+    border: none;
+
+}
+.location-search{
+    position: relative;
+    width: 70%;
+    margin: 20px auto;
+}
+#results{
+    position: absolute;
+    top: 120%;
+    left: 0;
+    min-height: 200px;
+    width: 250px;
+    background-color: white;
+    z-index: 2;
+    display: none;
+}
+
 .section-b{
     display: flex;
-    justify-content: space-between;
-    padding-top: 200px;
-}
-.section-b .dine{
-     margin: 30px;
-     padding-top: 0px;
-     padding-bottom: 40px;
-     background-color: aliceblue;
-     border-radius: 20px;
-     overflow: hidden;
-     
+    justify-content: space-evenly;
+    padding-top: 150px;
 }
 .section-b img{
-    width: 100%;
-    height: 50vh;
-    
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.section-b .dine{
+    padding: 20px;
+
+}
+.section-b .instructions{
+    padding: 20px;
 }
 .section-b .dine:hover{
     transform: scale(1.1);
     transition: 3s;
     cursor: pointer;
 }
-.section-c{
-    padding: 20px;
-}
-.section-c .card{
-    padding: 20px;
+.section-c .col-paragraph{
     display: flex;
-    gap: 20px;
+}
+.section-c .col-link{
+    color: rgb(194, 25, 84);
+}
+/* .section-c{
+    padding: 20px;
 }
 .section-c img{
     width: 100%;
     height: 50vh;
     border-radius: 20px;
 }
-.section-c h3{
+.section-c .card{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.section-c .trips{
     position: relative;
     bottom: 50px;
     color: white;
-    padding: 10px;
-}
+    padding: 20px;
+} */
  

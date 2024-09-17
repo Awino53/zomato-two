@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>zomato</title>
     <link rel="stylesheet" href="./zomato.css">
-    <link rel="stylesheet" href=".https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <main>
@@ -22,84 +22,107 @@
                 </ul>
                  
             </nav>
-    
-           
         </header>
+
         <section class="section-a">
             <h1>zomato</h1>
             <h2>Discover the best food & drinks in Delhi NCR</h2>
-            <ul>
-                <a href="#"><i class="fa-solid fa-location-dot" style="color: #bf365f;"></i> 1, Ashoka Rd, Hanuman Road Area, Connaught Place, New Delhi, Delhi</a>
-            </ul>
-            <ul></ul>
-           <!--  <div class="main-dropdown">
-               <!--  <div class="dropdown-1">
-                    <ul>
-                        <li><a href="#"></a></li>
-                    </ul>
-                    <span></i></span>
-                    <div class="caret"></div>
-                    <ul>
-                        <li><a href="#"></a></li>
-                        <li class="active">
-                            <i class="fa-solid fa-location-crosshairs" style="color: #bb3576;"></i>detect current location 
-                             <span>using gps</span>
-                        </li>
-                        
-                    </ul>
-                   
-                </div> -->
-                
-               <!--  <div class="dropdown-2">
-                    <span>Ywca, 1, Ashoka Rd, Hanuman Road Area, Connaught Place, New Delhi, Delh</span>
-    
-                </div> -->
+            <div class="location-search">
+                <a href="#">
+                    <div class="dubai">
+                        <i class="fa-solid fa-location-dot" style="color: #962e56;"></i> 
+                        <span>dubai</span>
+                        <button id="locations">
+                            <i class="fa-solid fa-caret-down" style="color: #4f5052;"></i>
+                        </button>
 
-            <!-- </div> --> -->
-           
-             
-            
+                    </div>
+                    <div class="search">
+                       <i class="fa-solid fa-magnifying-glass" style="color: #686a6e;"></i>
+                       <input type="text" id="search" placeholder="Search for a restaurant, cuisine or a dish">
+
+                    </div>
+                                 
+                </a>
+                <div id="results">
+                    results
+                </div>
+            </div>
         </section>
+
         <section class="section-b">
             <div class="dine">
                 <img src="./order.avif" alt="">
-                <h3>Order food online</h3>
-                <p>stay home and order to your location</p>
-            
+                <div class="instructions">
+                  <h3>Order food online</h3>
+                  <p>stay home and order to your location</p>
+
+                </div>
+                
             </div>
             <div class="dine">
                 <img src="./glasses.webp" alt="">
-                <h3>Dinning</h3>
-                <p>Visit the cities favorite dishes</p>
+                <div class="instructions">
+                    <h3>Dinning</h3>
+                  <p>Visit the cities favorite dishes</p>
+
+                </div>
+                
             </div>
             <div class="dine">
                 <img src="./events.jpg" alt="">
-                <h3>Live events</h3>
-                <p>Discover indians best event planners</p>
+                <div class="instructions">
+                    <h3>Live events</h3>
+                    <p>Discover indians best event planners</p>
+
+                </div>
+               
             </div>
 
         </section>
+
         <section class="section-c">
-            <h1>Collections</h1>
-            <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+            <div class="col-paragraph">
+                <div class="main-paragraph">
+                    <h1>Collections</h1>
+                   <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Delhi NCR, based on trends</p>
+                </div>
+                <div class="col-link">
+                    <a href="#">All Collections in Delhi NCR</a><i class="fa-solid fa-caret-right" style="color: #eb406b;"></i>
+                </div>
+               
+
+            </div>
             
             <div class="card">
                 <div class="collections">
                     <img src="./zomatoinsta-1.avif" alt="">
-                    <h3>Top 10 Restaurants in Delhi NCR</h3>
+                    <div class="trips">
+                        <h3>Top 10 Restaurants in Delhi NCR</h3>
+                        <span>40 places</span><i class="fa-solid fa-caret-right" style="color: #ced4dd;"></i>
+
+                    </div>
+                    
                      
                 </div>
                 <div class="collections">
                     <img src="./zomatoinsta-2.avif" alt="">
-                    <h3>Top 10 Cafes in Delhi NCR</h3>
+                    <div class="trips">
+                        <h3>Top 10 Cafes in Delhi NCR</h3>
+                        <span>21 places</span><i class="fa-solid fa-caret-right" style="color: #bac5cd;"></i>
+                    </div>
+                
                 </div>
                 <div class="collections">
                     <img src="./zomatoinsta-3.avif" alt="">
-                    <h3>Top 10 Pubs in Delhi NCR</h3>
+                    <div class="trips">
+                        <h3>Top 10 Pubs in Delhi NCR</h3>
+                        <span>15 places</span><i class="fa-solid fa-caret-right" style="color: #d0d7e2;"></i>
+                    </div>
+                
                 </div>
 
             </div>
-            <a href="#">All Collections in Delhi NCR</a>
             
            
         </section>
