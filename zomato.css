@@ -3,11 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hidden{
+
+}
+.hidden .bar{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+.hidden-1{
+    display: none; 
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 5;
+}
+.hidden-1 .bar-1{
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    gap: 40%;
+    cursor: pointer;
+
+}
+.hidden-1 a{
+    color: grey;
+    display: flex;
+}
+.hidden-1 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
 main{
     background-image: url("./babeque.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
+
     height: 80vh;
 }
 header{
@@ -55,6 +90,14 @@ ul{
     border-right: 1;
     
 } 
+#locations{
+    border: none;
+    background-color: white;
+
+}
+.search{
+    padding: 5px;
+}
 #search{
     padding: 10px;
     border: none;
@@ -69,13 +112,28 @@ ul{
     position: absolute;
     top: 120%;
     left: 0;
-    min-height: 200px;
+    min-height: 100px;
     width: 250px;
     background-color: white;
+    border-radius: 10px;
     z-index: 2;
     display: none;
+    transition: 2s;
 }
+#results .loci{
+    padding: 8px;
+    display: flex;
+    gap: 2px;
 
+}
+#results a{
+    color: rgb(187, 72, 91);
+}
+#results .span{
+    color: rgb(133, 126, 126);
+    font-size: 1.0rem;
+
+}
 .section-b{
     display: flex;
     justify-content: space-evenly;
@@ -97,30 +155,51 @@ ul{
     transition: 3s;
     cursor: pointer;
 }
+.section-c{
+    padding: 30px;
+}
 .section-c .col-paragraph{
     display: flex;
+    justify-content: space-between;
+    padding: 30px;
 }
-.section-c .col-link{
+.col-link a{
+    padding: 10px;
     color: rgb(194, 25, 84);
 }
-/* .section-c{
-    padding: 20px;
-}
-.section-c img{
-    width: 100%;
-    height: 50vh;
-    border-radius: 20px;
-}
 .section-c .card{
-    padding: 20px;
     display: flex;
     gap: 20px;
 }
-
-.section-c .trips{
-    position: relative;
-    bottom: 50px;
+.card img{
+    border-radius: 10px;
+    width: 300px;
+    height: 60vh;
+}
+.trips{
     color: white;
-    padding: 20px;
-} */
- 
+    position: relative;
+    bottom: 70px;
+    padding: 10px;
+}
+.card:hover{
+    cursor: pointer;
+}
+.popular-containers{
+    display: flex;
+    flex-direction: column;
+}
+.popular-containers .container{
+    display: flex;
+    
+}
+.container .child{
+    color: grey;
+
+}
+@media (max-width:760px){
+    .hidden-1{
+        display: block;
+    }
+
+}

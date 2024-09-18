@@ -10,3 +10,25 @@ locBtn.addEventListener("click", (e)=>{
         resultsel.style.display = "block"
     }
 })
+
+const bar = document.querySelector(".bar")
+bar.addEventListener("click",(e)=>{
+    let hidden = document.querySelector(".hidden-1")
+    if(hidden.style.display === "block"){
+        hidden.style.display ="none"
+    }else{
+        hidden.style.display = "block"
+    }
+
+    
+})
+
+const solid = document.querySelector(".bar-1")
+solid.addEventListener("click",(e)=>{
+    let show = document.querySelector(".hidden-1")
+    if(show.style.display === "none"){
+        show.style.display = "block"
+    }else{
+        show.style.display = "none"
+    }
+})
