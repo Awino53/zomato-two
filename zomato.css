@@ -185,17 +185,34 @@ ul{
 .card:hover{
     cursor: pointer;
 }
+.popular{
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+.popular h1{
+    padding: 20px;
+}
 .popular-containers{
     display: flex;
     flex-direction: column;
+    gap: 40px;
 }
 .popular-containers .container{
     display: flex;
+    gap:20px;
     
 }
 .container .child{
     color: grey;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 20px;
 
+}
+.container .child:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 0px 1px;
 }
 @media (max-width:760px){
     .hidden-1{
