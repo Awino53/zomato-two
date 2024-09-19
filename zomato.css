@@ -208,6 +208,7 @@ ul{
     border: 1px solid grey;
     border-radius: 10px;
     padding: 20px;
+    display: flex;
 
 }
 .container .child:hover{
@@ -218,5 +219,22 @@ ul{
     .hidden-1{
         display: block;
     }
+    .section-a a{
+        display: flex;
+        flex-direction: column;
+    }
+    .section-b{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
 
 }
